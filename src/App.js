@@ -14,8 +14,6 @@ const App = () => {
 
   const [progress, setProgress] = useState(0);
 
-  // const [state, setState] = useState({ progress: progress });
-
   return (
     <>
       <Router>
@@ -24,7 +22,6 @@ const App = () => {
           color='#f11946'
           height={3}
           progress={progress}
-        // onLoaderFinished={() => setProgress(0)}
         />
         <Routes>
           <Route exact path='/'

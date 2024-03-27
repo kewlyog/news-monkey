@@ -2,30 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    // constructor(props) {
-    //     super(props);
-    //     this.searchText = { value: '' };
-
-    //     this.handleChange = this.handleChange.bind(this);
-    //     this.handleSubmit = this.handleSubmit.bind(this);
-    //     // this.handleSearch = this.handleSearch.bind(this);
-    // }
-
-    // handleChange(event) {
-    //     // alert('changed');
-    //     this.setState({ value: event.target.value });
-    // }
-
-    // handleSubmit(event) {
-    //     // alert('submitted: ' + this.state.value);
-    //     event.preventDefault();
-    // }
-
-    //  onClick={this.handleSearch}
-    // handleSearch = () => {
-    //     console.log('Search clicked');
-    // }
-
     return (
         <div>
             <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -71,10 +47,6 @@ const Navbar = () => {
                                     <li><Link className="dropdown-item" key={'ca'} to="/Canada">Canada</Link></li>
                                     <li><Link className="dropdown-item" key={'cn'} to="/China">China</Link></li>
                                 </ul>
-                                {/* <form onSubmit={this.handleSubmit} className="d-flex" role="search">
-                                        <input value={this.searchText.value} onChange={this.handleChange} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                        <button className="btn btn-outline-success" type="submit">Search News</button>
-                                    </form> */}
                             </li>
                         </ul>
                     </div>

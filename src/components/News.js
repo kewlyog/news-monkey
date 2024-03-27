@@ -12,8 +12,6 @@ const News = (props) => {
     const [page, setPage] = useState(1);
     const [totalResults, setTotalResults] = useState(0);
 
-    // document.title = `News - ${this.capitalizeFirstLetter(props.category)}`;
-
     const apiUrl = 'https://newsapi.org/v2/top-headlines';
 
     const capitalizeFirstLetter = (str) => {
@@ -28,8 +26,6 @@ const News = (props) => {
         const apiUrlWithParams = apiUrl +
             `?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
 
-        // console.log(apiUrlWithParams);
-
         let data = await fetch(apiUrlWithParams);
 
         props.setProgress(50);
@@ -37,8 +33,6 @@ const News = (props) => {
         let parsedData = await data.json();
 
         props.setProgress(80);
-
-        // console.log(parsedData);
 
         if (parsedData.status === 'error') {
             parsedData = articlesJson;
@@ -53,35 +47,14 @@ const News = (props) => {
 
     useEffect(() => {
         updateNews();
+
+        document.title = `News - ${capitalizeFirstLetter(props.category)}`;
+        // eslint-disable-next-line
     }, []);
 
     const handleRefresh = async () => {
         updateNews();
     }
-
-    // const handleFirstClick = async () => {
-    //     updateNews();
-    // }
-
-    // const handlePreviousClick = () => {
-    //     setPage(page - 1);
-    //     this.updateNews();
-    // }
-
-    // const handleNextClick = () => {
-    //     // logic for Next button to stop working if no next page is available
-    //     // if (!((this.state.page + 1) > (Math.ceil(this.state.totalResults / props.pageSize)))) {
-    //     //     this.updateNews(this.state.page + 1);
-    //     // }
-    //     setPage(page + 1);
-    //     this.updateNews();
-    // }
-
-    // const handleLastClick = async () => {
-    //     if (!((page + 1) > (Math.ceil(totalResults / props.pageSize)))) {
-    //         updateNews(Math.ceil(totalResults / props.pageSize));
-    //     }
-    // }
 
     const fetchMoreData = async () => {
 
@@ -92,8 +65,6 @@ const News = (props) => {
 
         let data = await fetch(apiUrlWithParams);
         let parsedData = await data.json();
-
-        // console.log(parsedData);
 
         if (parsedData.status === 'error') {
             parsedData = articlesJson;
@@ -135,24 +106,9 @@ const News = (props) => {
                     </div>
                 </div>
             </InfiniteScroll>
-            {/* <div className="container d-flex justify-content-around">
-                    <button disabled={page <= 1} type='button' className='btn btn-dark mx-2 my-2'
-                        onClick={this.handleFirstClick}>First</button>
-                    <button disabled={page <= 1} type='button' className='btn btn-dark mx-2 my-2'
-                        onClick={this.handlePreviousClick}>&larr; Previous</button>
-                    <p className='my-3'>Page {page}</p>
-                    <button disabled={((page + 1) > (Math.ceil(totalResults / props.pageSize)))}
-                        type='button' className='btn btn-dark mx-2 my-2'
-                        onClick={this.handleNextClick}>Next &rarr;</button>
-                    <button disabled={((page + 1) > (Math.ceil(totalResults / props.pageSize)))}
-                        type='button' className='btn btn-dark mx-2 my-2'
-                        onClick={this.handleLastClick}>Last</button>
-                </div> */}
         </>
     )
 }
-
-
 
 News.defaultProps = {
     country: 'us',
