@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": { "id": null, "name": "Hindustan Times" },
+      "author": "HT Sports Desk",
+      "title": "Hardik Pandya approaches Rohit Sharma in first meeting post MI captaincy switch, interaction ends rift rumours - Hindustan Times",
+      "description": "Hardik Pandya reached out to Rohit Sharma in the first meeting after MI's captaincy switch before the IPL 2024. | Cricket",
+      "url": "https://www.hindustantimes.com/cricket/hardik-pandya-approaches-rohit-sharma-first-meeting-mi-captaincy-switch-interaction-ends-rift-rumours-ipl-2024-gt-101710947510638.html",
+      "urlToImage": "https://www.hindustantimes.com/ht-img/img/2024/03/20/1600x900/MixCollage-20-Mar-2024-08-35-PM-5991_1710949757942_1710949764709.jpg",
+      "publishedAt": "2024-03-20T15:31:39Z",
+      "content": "Fresh from guiding Virat Kohli-less Team India to an impressive series win over England in the ICC World Test Championship (WTC), skipper Rohit Sharma had his first public interaction with newly-appo… [+2348 chars]"
+    },
+    {
+      "source": { "id": "the-times-of-india", "name": "The Times of India" },
+      "author": "TOI Sports Desk",
+      "title": "'Virat is certainly...': Steve Smith rallies behind Kohli's place in T20 World Cup squad - The Times of India",
+      "description": "Cricket News: The cricketing world was rocked last week by a major shock as reports surfaced suggesting that Virat Kohli might face exclusion from India's T20 World",
+      "url": "https://timesofindia.indiatimes.com/sports/cricket/icc-mens-t20-world-cup/virat-is-certainly-steve-smith-rallies-behind-kohlis-place-in-t20-world-cup-squad/articleshow/108649440.cms",
+      "urlToImage": "https://static.toiimg.com/thumb/msid-108649575,width-1070,height-580,imgsize-41834,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg",
+      "publishedAt": "2024-03-20T12:54:00Z",
+      "content": null
+    },
+    {
+      "source": { "id": null, "name": "NDTV News" },
+      "author": null,
+      "title": "\"Hurts No One\": Grammy Award Winner Ricky Kej On Introduction Of Zomato's Veg Fleet - NDTV",
+      "description": "NDTV.com: India, Business, Bollywood, Cricket, Video and Breaking News",
+      "url": "https://www.ndtv.com",
+      "urlToImage": "https://cdn.ndtv.com/common/images/ogndtv.png",
+      "publishedAt": "2024-03-20T07:59:39Z",
+      "content": null
+    }
+  ]
+}
